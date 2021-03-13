@@ -34,8 +34,8 @@ const Header = (title, date, temp) => {
 
 const headerAppender = (selector) => {
   const header = Header('Harry Potter', "1/1/2000", "9")
-  // const element = document.querySelector(selector)
-  // element.appendChild(header)
+  const element = document.querySelector(selector)
+  element.appendChild(header)
 
   // TASK 2
   // ---------------------

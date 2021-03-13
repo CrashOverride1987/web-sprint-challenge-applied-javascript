@@ -57,8 +57,22 @@ const cardAppender = (selector) => {
   //
   axios.get(`https://lambda-times-api.herokuapp.com/articles`)
   .then((response) => {
-   console.log(response.data.articles.bootstrap[0].authorName)
-   
+   console.log(response.data.articles.bootstrap)
+   selector.appendChild(Card(response.data.articles.bootstrap[0]))
+   selector.appendChild(Card(response.data.articles.javascript[0]))
+   selector.appendChild(Card(response.data.articles.jquery[0]))
+   selector.appendChild(Card(response.data.articles.node[0]))
+   selector.appendChild(Card(response.data.articles.technology[0]))
+   selector.appendChild(Card(response.data.articles.bootstrap[0]))
+   selector.appendChild(Card(response.data.articles.javascript[1]))
+   selector.appendChild(Card(response.data.articles.jquery[1]))
+   selector.appendChild(Card(response.data.articles.node[1]))
+   selector.appendChild(Card(response.data.articles.technology[1]))
+   selector.appendChild(Card(response.data.articles.bootstrap[2]))
+   selector.appendChild(Card(response.data.articles.javascript[2]))
+   selector.appendChild(Card(response.data.articles.jquery[2]))
+   selector.appendChild(Card(response.data.articles.node[2]))
+   selector.appendChild(Card(response.data.articles.technology[2]))
    })
   .catch((error) => {
     console.log(error)
