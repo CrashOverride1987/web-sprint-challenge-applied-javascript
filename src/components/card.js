@@ -21,6 +21,7 @@ const Card = (article) => {
   //
   const cardDiv = document.createElement('div')
   cardDiv.classList.add('card')
+  
 
   const headlineDiv = document.createElement('div')
   headlineDiv.classList.add('headline')
